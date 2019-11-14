@@ -1,0 +1,25 @@
+def main():
+    print("Input Payroll() or MPG() to begin the calculation")
+    def Payroll():
+        print("pay = hourly rate * Hours Worked")
+        Rate = float(input("What is your hourly rate?: "))
+        print("Hourly rate ", Rate)
+        Hours = float(input("How many hours worked?: "))
+        print("Hours worked ", Hours)
+        Pay =(Hours*Rate)
+        print("Pay is ", Pay)
+    def MPG():
+        print("Average MPG = Numer of Miles Driven / Amount of Gas Used")
+        Gas = float(input("How much gas is being used?: "))
+        print("Gas being used", Gas, "gallons")
+        Miles = float(input("How many miles have you traveled?: "))
+        print("Miles driven ", Miles, "miles")
+        AMPG =(Miles/Gas)
+        print("Average MPG is ", AMPG)
+
+        restart = input('Are you you in need of more calculation? ')
+        if restart == "Yes":
+            main()
+        else:
+            exit()
+main()
