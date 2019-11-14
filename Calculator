@@ -21,5 +21,6 @@ def main():
         if restart == "Yes":
             main()
         else:
-            exit()
+            print("Thanks for using my calculator!")
+
 main()
